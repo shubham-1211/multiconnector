@@ -1,0 +1,26 @@
+{
+    "plugins": [
+        "airwits",
+        "streamer"
+    ],
+    "protocol": "hook",
+    "authConfig": {
+        "path": "${id}"
+    },
+    "dataObjects": [
+        ""
+    ],
+    "dataPropertyMappings": {
+        "temp": "temp",
+        "humidity": "humidity",
+        "co2": "co2"
+    },
+    "generalConfig": {
+        "hardwareId": {
+            "dataObjectProperty": "device"
+        },
+        "timestamp": {
+            "dataObjectProperty": "time"
+        }
+    }
+}

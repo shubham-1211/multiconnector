@@ -1,0 +1,15 @@
+{
+  "template": "nysse",
+  "static": {
+    "username": "<client-id>",
+    "password": "<client-secret>"
+  },
+  "dynamic": {},
+  "request": {
+    "vehicle": {
+      "idLocal": [
+        "<vehicle-id>"
+      ]
+    }
+  }
+}

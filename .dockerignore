@@ -1,0 +1,13 @@
+node_modules/
+greenlock.d/
+robottests/
+.idea/
+temp/
+test/
+wsdl/
+out/
+
+package-lock.json
+npm-debug.log
+.greenlockrc
+.env

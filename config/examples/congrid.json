@@ -1,0 +1,22 @@
+{
+  "template": "congrid",
+  "static": {
+    "api": "api-sandbox",
+    "version": "v2",
+    "resource": "notes",
+    "token": "<congrid-api-token>",
+    "type": "Note",
+    "outputArray": "note",
+    "idProperty": "projectId",
+    "contextValue": "https://standards.oftrust.net/v2/Context/DataProductOutput/Note/"
+  },
+  "dynamic": {
+    "authConfig.path": "targetObject.idLocal",
+    "dataPropertyMappings": "type"
+  },
+  "request": {
+    "ids": [
+      "<project-id>"
+    ]
+  }
+}

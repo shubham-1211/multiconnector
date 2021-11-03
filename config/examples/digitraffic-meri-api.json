@@ -1,0 +1,12 @@
+{
+  "template": "digitraffic-meri-api",
+  "static": {
+  },
+  "dynamic": {
+  },
+  "request": {
+    "ids": [
+      "<port-to-visit>"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "template": "c4-cals-demand-supply",
+    "static": {
+        "env": "development",
+        "apikey": "<apikey>",
+        "bearer": "<bearer>",
+        "instanceId": "<instance-id>"
+    },
+    "dynamic": {
+        "authConfig.path": "targetObject.order.idLocal",
+        "authConfig.instance": "instanceId"
+    },
+    "request": {
+        "targetObject": {
+            "order": {
+                "idLocal": "<id-local>"
+            }
+        }
+    }
+}

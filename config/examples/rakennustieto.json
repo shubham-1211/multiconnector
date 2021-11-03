@@ -1,0 +1,16 @@
+{
+  "template": "rakennustieto",
+  "static": {
+    "url": "<url>",
+    "username": "<username>",
+    "password": "<password>",
+    "type": "ProductCatalog",
+    "property": "itemNumber"
+  },
+  "dynamic": {
+    "authConfig.path": "codeProductCatalog"
+  },
+  "request": {
+    "codeProductCatalog": "<product-code>"
+  }
+}

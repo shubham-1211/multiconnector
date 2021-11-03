@@ -1,0 +1,18 @@
+{
+  "template": "trackinno",
+  "static": {
+    "clientId": "<client-id>",
+    "clientSecret": "<client-secret>",
+    "api": "locations",
+    "type": "Location",
+    "dataObject": "docs"
+  },
+  "dynamic": {
+    "authConfig.path": "ids"
+  },
+  "request": {
+    "ids": [
+      "<location-id>"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "plugins": [
+    "digitraffic-port-call",
+    "filter-by-id"
+  ],
+  "protocol": "rest",
+  "authConfig": {
+    "url": "https://meri.digitraffic.fi/api",
+    "path": "/v1/port-calls"
+  },
+  "dataObjects": [
+    "portCalls"
+  ],
+  "dataPropertyMappings": {
+    "PortCallReport": ""
+  },
+  "generalConfig": {
+    "hardwareId": {
+      "dataObjectProperty": "portToVisit"
+    },
+    "timestamp": {
+      "dataObjectProperty": "portCallTimestamp"
+    },
+    "sourceName": {
+      "dataObjectProperty": "vesselName"
+    }
+  },
+  "output": {
+    "contextValue": "https://standards.oftrust.net/v2/Context/DataProductOutput/VehicleInformation/PortCallReport/",
+    "timestamp": "timestamp",
+    "data": "data",
+    "array": "portCallReport"
+  }
+}

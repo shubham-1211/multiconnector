@@ -1,0 +1,41 @@
+{
+  "plugins": [
+    "randomeData"
+  ],
+  "protocol": "custom",
+  "authConfig": {
+    "path": "${id}"
+  },
+  "dataObjects": [
+    ""
+  ],
+  "dataPropertyMappings": {
+    "id": "id",
+    "uid": "uid",
+    "first_name": "first_name",
+    "last_name": "last_name",
+    "date_of_birth": "date_of_birth"
+  },
+  "generalConfig": {
+    "sourceName": {
+      "dataObjectProperty": "name"
+    },
+    "hardwareId": {
+      "dataObjectProperty": "id"
+    },
+    "timestamp": {
+      "dataObjectProperty": "timestamp"
+    }
+  },
+  "output": {
+    "contextValue": "https://standards.oftrust.net/v2/Context/DataProductOutput/Sensor/",
+    "array": "sensors",
+    "object": "data",
+    "first_name": "first_name",
+    "last_name": "last_name",
+    "date_of_birth": "date_of_birth",
+    "uid": "uid",
+    "data": "data",
+    "id": "configId"
+  }
+}

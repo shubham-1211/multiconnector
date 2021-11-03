@@ -1,0 +1,46 @@
+{
+  "plugins": [
+    "oauth2",
+    "millis",
+    "mode"
+  ],
+  "protocol": "rest",
+  "authConfig": {
+    "url": "${authUrl}",
+    "authPath": "/token",
+    "clientId": "${clientId}",
+    "clientSecret": "${clientSecret}",
+    "scope": "openid",
+    "path": "${dataUrl}/v3/iaq/sensors/${mode}/${id}"
+  },
+  "dataObjects": [
+    "data"
+  ],
+  "dataPropertyMappings": {
+    "MeasureAirTemperatureCelsiusDegree": "Temperature_01",
+    "MeasureAirHumidityPercentage": "Humidity_01",
+    "MeasureAirCO2LevelPPM": "CO2_01"
+  },
+  "generalConfig": {
+    "query": {
+      "properties": [
+        {
+          "interval": "minute"
+        }
+      ],
+      "end": "time_to",
+      "start": "time_from"
+    },
+    "hardwareId": {
+      "pathIndex": 7
+    },
+    "timestamp": {
+      "dataObjectProperty": "timestamp"
+    },
+    "mode": {
+      "latest": "latest",
+      "history": "timeseries",
+      "prediction": "timeseries"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "plugins": [
+      "congrid-note"
+  ],
+  "protocol": "rest",
+  "authConfig": {
+    "url": "https://${api}.congrid.com",
+    "headers": {
+      "Congrid-API-Token": "${token}"
+    },
+    "path": "/${version}/${resource}"
+  },
+  "dataObjects": [
+    "results"
+  ],
+  "dataPropertyMappings": {
+    "${type}": ""
+  },
+  "generalConfig": {
+    "sourceName": {
+      "dataObjectProperty": "description"
+    },
+    "hardwareId": {
+      "dataObjectProperty": "${idProperty}"
+    },
+    "timestamp": {
+      "dataObjectProperty": "createdAt"
+    }
+  },
+  "input": {
+    "required": [
+      "parameters.targetObject"
+    ],
+    "ids": "parameters.targetObject.idLocal"
+  },
+  "output": {
+    "contextValue": "${contextValue}",
+    "array": "${outputArray}",
+    "data": "data"
+  }
+}

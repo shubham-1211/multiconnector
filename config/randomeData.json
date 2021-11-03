@@ -1,0 +1,11 @@
+{
+  "template": "randomeData",
+  "static": {},
+  "dynamic": {
+    "authConfig.path": "ids",
+    "dataPropertyMappings": "type"
+  },
+  "request": {
+    "ids": "<configId>"
+  }
+}

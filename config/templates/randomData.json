@@ -1,6 +1,6 @@
 {
   "plugins": [
-    "randomeData"
+    "randomData"
   ],
   "protocol": "custom",
   "authConfig": {

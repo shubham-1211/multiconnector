@@ -38,9 +38,9 @@ const supportedParameters = {
     [definitions.PRODUCT_CODE]: {
         required: true,
     },
-    [definitions.TEST_CODE]: {
-        required: true,
-    },
+    // [definitions.TEST_CODE]: {
+    //     required: true,
+    // },
     [definitions.TIMESTAMP]: {
         required: true,
     },

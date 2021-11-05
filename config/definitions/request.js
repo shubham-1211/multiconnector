@@ -11,7 +11,7 @@ const definitions = {
     USER_TOKEN: 'x-user-token',
     /** Body */
     PRODUCT_CODE: 'productCode',
-    TEST_CODE: 'testCode',
+    // TEST_CODE: 'testCode',
     TIMESTAMP: 'timestamp',
     PARAMETERS: 'parameters',
     IDS: 'parameters.ids',

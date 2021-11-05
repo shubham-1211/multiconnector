@@ -21,7 +21,9 @@ const {
 
 /** Optional environment variables. */
 let privateKey = process.env.PRIVATE_KEY;
-let publicKey = process.env.PUBLIC_KEY;
+// let publicKey = process.env.PUBLIC_KEY;
+
+let publicKey = "-----BEGIN RSA PRIVATE KEY-----\nMIICXAIBAAKBgQDXb1e4Q3bayf8GErw9JPV+l6rMkzI2Qoy5ZCu0nYLn+wwDfJaR\n+py+N38Lm3MKzoAxGMpcccsgbEKNWiNFyJz6qelGBG8f/E+hM85CUH/fYoi8jEFC\nEZsmv47IyEmbD4SIXCCUZ9mISrmjaX/2STmGfJTJyoiXjc7szo4kuaipNQIDAQAB\nAoGAbteLo3OamFErlD1ZeoAkiyCPsTfessoky1H9pq0P6DljYfvdIHh34up8xEUT\nuLCshhZCL7Qglar9xupkkYf5M5DclxsOS7Y0zGbnweINFzY7sBpxFceAikJASnfe\nqTIX8GSGifqHVDMflg0Ncx/SqPczBqSyse2bkmpvcgyzD6ECQQD47gpklqQbDU2z\nSIbA5eblaTJ1Ff0YsfAcoukLilt9QBUImLCD/KZ9cKAFLPYpg5z7btSJOe2qiibO\nldLXdLPJAkEA3Y3DBpCDEs8p6Cd2YfUklOE8UMENroc3NRi8+LlhDAtqHQzNYuxA\nKVGozhRF0Vx0kEOq1r+u7ytazl8ZTFNIDQJAEe+EzC6WcGSK/qnxG6D0+/6SZiFJ\ndSgM9uM+C1jSsrmVSmNGBJyFmnAs93J/4gnbm7omkiScXTdLCIN/B4sfEQJASBdR\nx3gMfnlUbIsytSs8bQlhQ/GdjxXGfAuBqflAP9gS/kLlLfQr6IX+xJfKJBbOgwbR\ntzEGLiLQWGiPZcuPnQJBAOWrofQjDhcQJcIj3TVHtQQ8yzKP/ubDAI5TG3VHhCPA\nJNIzXAbwQIIXgj9L74ko37Roj0IMHBBd82nwM0EPt4k=\n-----END RSA PRIVATE KEY-----"
 
 if (!privateKey || !publicKey) {
     // If RSA keys are not provided by environment variables,
